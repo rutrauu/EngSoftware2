@@ -1,0 +1,1 @@
+print("O Salário do João é 2500,00")
