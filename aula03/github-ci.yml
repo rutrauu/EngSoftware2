@@ -1,0 +1,34 @@
+- teste
+
+execution-job:
+  stage: execution
+  image: python:3.10
+  script:
+    - echo "execution"
+    - python calcula_idade.py
+teste-job:
+ stage: teste
+ script:
+    -echo "teste"
+
+
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v3
+#       - run: echo "Building the project"
+
+#   test:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v3
+#       - run: echo "Running tests"
+
+#   deploy:
+#     runs-on: ubuntu-latest
+#     needs: [build, test]
+#     steps:
+#       - uses: actions/checkout@v3
+#       - run: echo "Deploying application"
+  
