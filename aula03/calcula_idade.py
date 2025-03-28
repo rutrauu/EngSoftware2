@@ -7,3 +7,7 @@ idade = hoje.year - nascimento.year
 
 
 print(f"Voce têm {idade} anos.")
+
+if idade>=18:
+    print("Pode tirar sua CNH")
+    
