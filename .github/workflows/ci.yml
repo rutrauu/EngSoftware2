@@ -17,10 +17,10 @@ jobs:
     - name: Instalação do Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.13'
+        python-version: '3.8'
 
     - name: Rodar testes da calculadora
-      run: pytest calculadora_test.py
+      run: python -m unittest pytest calculadora_test.py
 
     - name: Rodar testes de verificação
-      run: pytest ehpar.py
+      run: python -m unittest pytest ehpar.py
