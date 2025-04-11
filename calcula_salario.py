@@ -1,1 +1,0 @@
-print("O Salário do João é 3000,00")

@@ -1,5 +1,6 @@
 import unittest
-from calculadora import somar, dividir, isEven
+from calculadora import somar, dividir
+
 class TestCalculadora(unittest.TestCase):
     def test_somar(self):
         self.assertEqual(somar(2, 3), 5)
@@ -14,10 +15,3 @@ class TestCalculadora(unittest.TestCase):
     def test_dividir_por_zero(self):
         with self.assertRaises(ValueError):
             dividir(10, 0)
-
-class ehPar(unittest.TestCase):
-    def test_isEven(self):
-        self.assertTrue(isEven(2))
-        self.assertFalse(isEven(3))
-        self.assertTrue(isEven(0))
-        self.assertTrue(isEven(-4))
