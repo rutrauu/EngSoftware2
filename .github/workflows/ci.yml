@@ -20,7 +20,7 @@ jobs:
         python-version: '3.8'
 
     - name: Rodar testes da calculadora
-      run: python -m unittest pytest calculadora_test.py
+      run: python -m unittest discover -s.. tests -p "calculadora_test.py"
 
     - name: Rodar testes de verificação
-      run: python -m unittest pytest ehpar.py
+      run: python -m unittest discover -s.. tests -p "ehpar.py"
